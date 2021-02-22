@@ -21,12 +21,14 @@ body {
     background-image: url('../img/Fdo\ web.PNG');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position-y: bottom;
+    background-position-x: center;
+    margin-top: -3rem;
 }
 
 .texto {
     position: absolute;
-    top: 85vh;
+    top: 75vh;
     letter-spacing: 3px;
 }
 h1 {
@@ -37,8 +39,11 @@ h2 {
 }
 
 @media(min-width: 768px) {
+    #home {
+        background-position-y: bottom;
+    }
     .texto {
-        top: 88vh;
+        top: 80vh;
     }
 }
 

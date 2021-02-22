@@ -14,25 +14,26 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100vh;
+}
+
+#home {
     background-image: url('../img/Fdo\ web.PNG');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
 }
-
 
 .texto {
     position: absolute;
     top: 85vh;
     letter-spacing: 3px;
 }
-.texto h1 {
+h1 {
     color: #192549;
 }
-.texto h2 {
+h2 {
     color: #00b3e8;
-    font-style: italic;
 }
 
 @media(min-width: 768px) {

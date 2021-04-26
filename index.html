@@ -4,37 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="shortcut icon" href="./img/Escudo3d.png" type="image/x-icon">
-    <title>Club B.A.N.C.O - Sitio en construccion</title>
+    <title>Club B.A.N.C.O - Sitio Oficial</title>
 </head>
 
 <body id="home">
-    <div class="texto">
-        <h1>SITIO EN CONSTRUCCION</h1>
-        <h2>CUOTA SOCIETARIA</h2>
-        <a mp-mode="dftl" href="https://www.mercadopago.com/mla/debits/new?preapproval_plan_id=2c9380847773e2e50177c9f0e5f566c2" name="MP-payButton" class='blue-ar-l-rn-none'>Debito Automático</a>
+    <!-- Menu -->
+    <nav class="navbar">
+        <div class="navbar-background">
+            <div class="logo-menu">
+                <img id="mobile" src="./img/Escudo-banco-mobile.png" class="no-shadow" alt="Club banco">
+                <img id="desk" src="./img/Escudo-banco.png" class="no-shadow" alt="Club banco">
+            </div>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a data-scroll href="#futbol">FUTBOL</a></li>
+                <li><a data-scroll href="#nosotros">EL CLUB</a></li>
+                <li><a data-scroll href="#noticias">NOTICIAS</a></li>
+                <li><a data-scroll href="#contacto">CONTACTO</a></li>
 
-
-    </div>
-    <script type="text/javascript">
-       (function() {
-          function $MPC_load() {
-             window.$MPC_loaded !== true && (function() {
-             var s = document.createElement("script");
-             s.type = "text/javascript";
-             s.async = true;
-             s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
-             var x = document.getElementsByTagName('script')[0];
-             x.parentNode.insertBefore(s, x);
-             window.$MPC_loaded = true;
-          })();
-       }
-       window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
-       })();
-    </script>
+            </ul>
+        </div>
+    </nav>
+    <!-- Menu -->
+    <header id="home">
+        <div class="header-gradiente"></div>
+        <div class="header-texto">
+            <h1>CLUB BANCO</h1>
+            <small>JUNTOS DESDE 1949</small>
+            <button>HACETE SOCIO</button>
+        </div>
+    </header>
+    <section id="futbol">
+        <h2>FÚTBOL</h2>
+        <div class="d-flex">
+            <div class="card">
+                <img src="./img/Card.png" alt="Futbol masculino">
+                <div class="card-footer">
+                    <p>1era DIVISIÓN MASCULINO</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="nosotros"></section>
+    <section id="recuerdos"></section>
+    <section id="mapa"></section>
+    <footer></footer>
 </body>
 
 </html>
-
-

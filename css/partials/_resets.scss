@@ -72,7 +72,11 @@ label {
 }
 .d-flex {
   display: flex;
+  flex-wrap: wrap;
 }
 .justify-center {
   justify-content: center;
+}
+p {
+  margin-bottom: 10px;
 }

@@ -92,12 +92,18 @@ label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .justify-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+p {
+  margin-bottom: 10px;
 }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
@@ -1611,11 +1617,19 @@ label {
 }
 
 .navbar .menu-btn:checked ~ .menu {
-  max-height: 395px;
+  height: 100vh;
+  max-height: 100vh;
   z-index: 1000;
-  width: 310px;
-  -webkit-box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.22);
-          box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.22);
+  width: 300px;
+  -webkit-box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.22);
+          box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.22);
+  font-size: 1.6rem;
+  padding: 2rem;
+  background-color: #61b1e5;
+}
+
+.navbar .menu-btn:checked ~ .menu a {
+  border: 0;
 }
 
 .navbar .menu-btn:checked ~ .menu-icon .navicon {
@@ -1760,5 +1774,69 @@ header .header-texto button {
   border-radius: 15px;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+}
+
+#futbol {
+  padding: 4rem 1rem 8rem 1rem;
+  position: relative;
+}
+
+#futbol h2 {
+  text-align: center;
+  color: #192549;
+  font-size: 2rem;
+}
+
+#futbol .card {
+  width: 48%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5%;
+  -webkit-filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.22));
+          filter: drop-shadow(2px 3px 5px rgba(0, 0, 0, 0.22));
+}
+
+#futbol .card img {
+  width: 100%;
+}
+
+#futbol .card:nth-child(even) {
+  margin-left: 2%;
+}
+
+#futbol .card-footer {
+  position: absolute;
+  padding: 3px 10px;
+  bottom: 0;
+  background-color: #192549;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+  margin: 0 5px;
+}
+
+#futbol svg {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -5px;
+}
+
+#nosotros {
+  background-color: #61b1e5;
+  padding: 4rem 1rem;
+}
+
+#nosotros .nosotros-texto {
+  padding: 2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

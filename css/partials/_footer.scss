@@ -1,0 +1,70 @@
+footer {
+    padding: 3rem 1rem 4rem 1rem;
+    background-color: $azul;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.42);
+    h3 {
+        color: #fff;
+    }
+    div {
+        &:nth-child(2) {
+            color: $celeste;
+            padding: 3rem 1rem;
+
+            text-align: center;
+            img {
+                width: 80px;
+            }
+            #arf {
+                width: 50px;
+            }
+        }
+        &:nth-child(3) {
+            color: $celeste;
+            text-align: center;
+            a {
+                color: #fff;
+            }
+        }
+    }
+    form {
+        div {
+            text-align: start !important;
+            padding: 10px 0 !important;
+        }
+        label {
+            color: $celeste;
+        }
+        input,
+        textarea {
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid $celeste;
+        }
+        button {
+            background-color: transparent;
+            border: 1px #fff solid;
+            padding: 5px 10px;
+            margin-top: 10px;
+            color: #fff;
+            width: 120px;
+            border-radius: 10px 0 10px 0;
+            transition: all 0.1s;
+            &:hover {
+                background-color: #fff;
+                color: $azul;
+            }
+        }
+    }
+    .copy {
+        width: 100%;
+        background-color: $celeste;
+        color: $azul;
+        position: absolute;
+        text-align: center;
+        bottom: 0;
+        left: 0;
+        font-size: 12px;
+    }
+}

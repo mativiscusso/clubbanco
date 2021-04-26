@@ -1,13 +1,4 @@
-@font-face {
-  font-family: "Nunito";
-  src: local("../fonts/NunitoSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Big Noodle";
-  src: local("../fonts/BIG_NOODLE_TITLING.ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -96,6 +87,13 @@ label {
       flex-wrap: wrap;
 }
 
+.flex-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .justify-center {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -104,6 +102,10 @@ label {
 
 p {
   margin-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
 }
 
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
@@ -1512,6 +1514,49 @@ p {
   }
 }
 
+.masonry {
+  /* Masonry container */
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 0.1em;
+          column-gap: 0.1em;
+}
+
+.item {
+  /* Masonry bricks or child elements */
+  display: inline-block;
+  width: 100%;
+  padding: 0.1em;
+}
+
+.item img {
+  border-radius: 10px;
+}
+
+/* Masonry on large screens */
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    -webkit-column-count: 4;
+            column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    -webkit-column-count: 3;
+            column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+}
+
 /* Menu */
 .navbar {
   position: fixed;
@@ -1532,6 +1577,7 @@ p {
 }
 
 .navbar .logo-menu {
+  padding: 0.7rem;
   width: 30%;
 }
 
@@ -1725,6 +1771,7 @@ p {
 }
 
 header {
+  padding-top: 5%;
   height: 50vh;
   background-image: url("../img/background-header.png");
   background-position: center;
@@ -1765,7 +1812,7 @@ header .header-texto small {
 }
 
 header .header-texto button {
-  width: 120px;
+  width: 130px;
   background-color: #61b1e5;
   color: #000;
   font-weight: 800;
@@ -1838,5 +1885,108 @@ header .header-texto button {
 
 #nosotros .nosotros-texto {
   padding: 2rem 0;
+}
+
+#recuerdos {
+  padding: 4rem 1rem;
+  background: #a09d77;
+}
+
+#recuerdos h2 {
+  text-align: center;
+  color: #192549;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+#mapa {
+  padding: 4rem 0 1rem 0;
+}
+
+#mapa h2 {
+  text-align: center;
+  color: #192549;
+  font-size: 2rem;
+  padding-bottom: 3rem;
+}
+
+footer {
+  padding: 3rem 1rem 4rem 1rem;
+  background-color: #192549;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+  -webkit-box-shadow: -5px 0 10px rgba(0, 0, 0, 0.42);
+          box-shadow: -5px 0 10px rgba(0, 0, 0, 0.42);
+}
+
+footer h3 {
+  color: #fff;
+}
+
+footer div:nth-child(2) {
+  color: #61b1e5;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+footer div:nth-child(2) img {
+  width: 80px;
+}
+
+footer div:nth-child(2) #arf {
+  width: 50px;
+}
+
+footer div:nth-child(3) {
+  color: #61b1e5;
+  text-align: center;
+}
+
+footer div:nth-child(3) a {
+  color: #fff;
+}
+
+footer form div {
+  text-align: start !important;
+  padding: 10px 0 !important;
+}
+
+footer form label {
+  color: #61b1e5;
+}
+
+footer form input,
+footer form textarea {
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #61b1e5;
+}
+
+footer form button {
+  background-color: transparent;
+  border: 1px #fff solid;
+  padding: 5px 10px;
+  margin-top: 10px;
+  color: #fff;
+  width: 120px;
+  border-radius: 10px 0 10px 0;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+footer form button:hover {
+  background-color: #fff;
+  color: #192549;
+}
+
+footer .copy {
+  width: 100%;
+  background-color: #61b1e5;
+  color: #192549;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  left: 0;
+  font-size: 12px;
 }
 /*# sourceMappingURL=styles.css.map */

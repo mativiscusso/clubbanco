@@ -1,16 +1,9 @@
-@font-face {
-  font-family: "Nunito";
-  src: local("../fonts/NunitoSans-Regular.ttf");
-}
-@font-face {
-  font-family: "Big Noodle";
-  src: local("../fonts/BIG_NOODLE_TITLING.ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
 $azul: #192549;
 $celeste: #61b1e5;
 $dorado: #a09d77;
 $nunito: "Nunito", sans-serif;
-$bigNoodle: "Big Noodle";
 
 * {
   box-sizing: border-box;
@@ -74,9 +67,15 @@ label {
   display: flex;
   flex-wrap: wrap;
 }
+.flex-column {
+  flex-direction: column;
+}
 .justify-center {
   justify-content: center;
 }
 p {
   margin-bottom: 10px;
+}
+iframe {
+  width: 100%;
 }

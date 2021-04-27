@@ -13,52 +13,62 @@
     <!-- Menu -->
     <nav class="navbar">
         <div class="navbar-background">
-            <div class="logo-menu">
+            <div class="logo-menu hvr-bob" data-aos="flip-up">
                 <img id="mobile" src="./img/logo-banco-mobile.svg" class="no-shadow" alt="Club banco">
                 <img id="desk" src="./img/Escudo-banco.png" class="no-shadow" alt="Club banco">
             </div>
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a data-scroll href="#futbol">FUTBOL</a></li>
-                <li><a data-scroll href="#nosotros">EL CLUB</a></li>
-                <li><a data-scroll href="#noticias">NOTICIAS</a></li>
-                <li><a data-scroll href="#contacto">CONTACTO</a></li>
-
+                <li class="hvr-bob"><a href="#futbol">FUTBOL</a></li>
+                <li class="hvr-bob"><a href="#nosotros">EL CLUB</a></li>
+                <!-- <li class="hvr-bob"><a href="#noticias">NOTICIAS</a></li> -->
+                <li class="hvr-bob"><a href="#contacto">CONTACTO</a></li>
+                <li class="hvr-bob">
+                    <a href="https://www.facebook.com/CIubBANCO" target="_blank">
+                        <img src="./img/facebook.svg" alt="facebook banco">
+                    </a>
+                </li>
+                <li class="hvr-bob"><a href="https://www.instagram.com/clubbanco" target="_blank"><img
+                            src="./img/instagram.svg" alt="instagram banco"></a></li>
             </ul>
         </div>
     </nav>
     <!-- Menu -->
     <header id="home">
         <div class="header-gradiente"></div>
-        <div class="header-texto">
+        <div class="header-texto" data-aos="zoom-out-up">
             <h1>CLUB BANCO</h1>
             <small>JUNTOS DESDE 1949</small>
-            <button>HACETE SOCIO</button>
+            <button>
+                <a href='#contacto'>
+                    HACETE SOCIO
+                </a>
+            </button>
         </div>
     </header>
     <section id="futbol">
-        <h2>FÚTBOL</h2>
+        <h2 data-aos="zoom-out-up">FÚTBOL</h2>
         <div class="d-flex">
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <img src="./img/Card.png" alt="Futbol masculino">
                 <div class="card-footer">
                     <p>1era DIVISIÓN MASCULINO</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-right">
                 <img src="./img/Card2.png" alt="Futbol masculino">
                 <div class="card-footer">
                     <p>1era DIVISIÓN FEMENINO</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <img src="./img/Card3.png" alt="Futbol masculino">
                 <div class="card-footer">
                     <p>DIVISIONES INFERIORES</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos="fade-left">
                 <img src="./img/Card4.png" alt="Futbol masculino">
                 <div class="card-footer">
                     <p>FUTBOL INFANTIL</p>
@@ -73,8 +83,8 @@
     </section>
     <section id="nosotros">
 
-        <img src="./img/graffiti-banco.png" alt="Quienes somos como club" class="w-100">
-        <div class="nosotros-texto">
+        <img src="./img/graffiti-banco.png" alt="Quienes somos como club" class="w-100" data-aos="flip-left">
+        <div class="nosotros-texto" data-aos="fade-in">
             <p>Durante aproximadamente 25 años nuestras divisiones participaron bajo el nombre de Club Atlético Banco
                 Nación Rosario, fundado el 10 de mayo de 1949 en Rosario, Pcia. de Santa Fe.
                 Interviniendo primero en la Asociación Rosarina de Fútbol y luego pasando a la Liga Sanlorenzina de
@@ -97,8 +107,8 @@
         </div>
     </section>
     <section id="recuerdos">
-        <h2>EL VAÚL DE LOS RECUERDOS</h2>
-        <div class="masonry">
+        <h2 data-aos="zoom-out-up">EL VAÚL DE LOS RECUERDOS</h2>
+        <div class="masonry" data-aos="fade-in">
             <div class="item"><img src="./img/recuerdos/big-recuerdo-22_100.jpg" alt="Galeria de recuerdos"
                     class="w-100"></div>
             <div class="item"><img src="./img/recuerdos/big-recuerdo-22_101.jpg" alt="Galeria de recuerdos"
@@ -136,14 +146,17 @@
         </div>
     </section>
     <section id="mapa">
-        <h2>¿DÓNDE ESTAMOS?</h2>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#a09d77" fill-opacity="1" d="M0,96L1440,160L1440,0L0,0Z"></path>
+        </svg>
+        <h2 data-aos="zoom-out-up">¿Dónde estamos?</h2>
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.449759473855!2d-60.69745768481519!3d-32.88627498093918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe3ffe0461bdd5db5!2sClub%20B.A.N.C.O!5e0!3m2!1sen!2sar!4v1619456932810!5m2!1sen!2sar"
             style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>
-    <footer>
-        <div>
-            <h3>CONTACTANOS</h3>
+    <footer id='contacto'>
+        <div data-aos="zoom-out-down">
+            <h2>Contactanos</h2>
             <form action="" method="post">
                 <div class="d-flex flex-column">
                     <label for="nombre">Nombre</label>
@@ -159,12 +172,12 @@
                 </div>
                 <div class="d-flex flex-column">
                     <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" cols="20" rows="5"></textarea>
+                    <textarea name="mensaje" cols="20" rows="3"></textarea>
                 </div>
                 <button type="submit">ENVIAR</button>
             </form>
         </div>
-        <div>
+        <div data-aos="zoom-out-up">
             <img src="./img//logo-banco-mobile.svg" alt="Escudo Banco">
             <p>Asociación Civíl Deportiva y Recreativa Barrio Alberdi Nuevo Centro Organizativo</p>
             <p>Bv. Rondeau 2983</p>
@@ -172,7 +185,7 @@
             <p>banco@rosariofutbol.com</p>
             <img id="arf" src="./img/arf.png" alt="Asociacion Rosarina de Futbol">
         </div>
-        <div>
+        <div data-aos="zoom-out-down">
             <h3>MENU</h3>
             <ul>
                 <li><a data-scroll href="#futbol">FUTBOL</a></li>
@@ -184,6 +197,10 @@
         </div>
         <div class="copy">Copyright by Club BANCO 2021</div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

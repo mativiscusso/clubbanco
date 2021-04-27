@@ -5,7 +5,7 @@
   width: 100%;
   z-index: 3;
   .navbar-background {
-    width: 100%;
+    width: 100vw;
     height: 60px;
     display: flex;
     justify-content: space-between;
@@ -38,6 +38,9 @@
   border-right: 1px solid #f4f4f4;
   text-decoration: none;
   transition: all 300ms;
+  img {
+    width: 40px;
+  }
 }
 
 /* menu */
@@ -101,9 +104,11 @@
   box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.22);
   font-size: 1.6rem;
   padding: 2rem;
-  background-color: $celeste;
+  background-color: #fff;
   a {
+    font-weight: 800;
     border: 0;
+    color: $azul;
   }
 }
 
@@ -123,6 +128,13 @@
 .navbar .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+@media (min-width: 768px) {
+  .navbar {
+    .logo-menu {
+      width: 20%;
+    }
+  }
+}
 
 @media (min-width: 998px) {
   .navbar ul {
@@ -137,11 +149,14 @@
     border: 0;
     font-weight: bold;
     padding: 20px 20px;
+    color: #fff;
   }
   .navbar .menu {
     clear: none;
     float: right;
     max-height: none;
+    display: flex;
+    align-items: center;
   }
   .navbar .menu-icon {
     display: none;
@@ -174,6 +189,21 @@
     left: 30px;
     align-self: center;
     padding: 1rem;
+  }
+  .navbar {
+    .logo-menu {
+      width: 13%;
+      margin-left: 20px;
+      align-self: end;
+      filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.22));
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .navbar-background {
+      height: 90px;
+      align-items: center;
+    }
   }
 
   @keyframes fadein {

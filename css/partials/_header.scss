@@ -1,5 +1,4 @@
 header {
-    padding-top: 5%;
     height: 50vh;
     background-image: url("../img/background-header.png");
     background-position: center;
@@ -29,7 +28,7 @@ header {
         button {
             width: 130px;
             background-color: $celeste;
-            color: #000;
+            color: $azul;
             font-weight: 800;
             border: 0;
             padding: 5px 10px;
@@ -38,3 +37,47 @@ header {
         }
     }
 }
+@media (min-width: 768px) {
+    header {
+        .header-texto {
+            padding: 1rem 4rem;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    header {
+        height: 100vh;
+        .header-gradiente {
+            height: 100vh;
+        }
+        .header-texto {
+            padding: 1rem 5rem;
+            top: 0;
+            margin-top: 300px;
+            h1 {
+                font-size: 4rem;
+            }
+            small {
+                letter-spacing: 14px;
+                font-size: 18px;
+                padding: 15px 6px;
+                font-weight: bold;
+            }
+            button {
+                width: 150px;
+                padding: 8px 15px;
+                border-radius: 15px;
+                font-size: 15px;
+                transition: all 0.15s ease;
+                &:hover {
+                    background-color: $azul;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+} ;

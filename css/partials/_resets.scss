@@ -12,6 +12,9 @@ $nunito: "Nunito", sans-serif;
   line-height: 1.5rem;
   font-family: $nunito;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-weight: 400;
 }
@@ -32,6 +35,9 @@ textarea:focus {
 label {
   display: flex;
   flex-direction: column;
+}
+button:hover {
+  cursor: pointer;
 }
 .w-25 {
   width: 25% !important;

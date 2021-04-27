@@ -1,5 +1,10 @@
 #mapa {
-    padding: 4rem 0 1rem 0;
+    padding: 6rem 0 1rem 0;
+    position: relative;
+    svg {
+        position: absolute;
+        top: 0;
+    }
     h2 {
         text-align: center;
         color: $azul;
@@ -7,3 +12,23 @@
         padding-bottom: 3rem;
     }
 }
+@media (min-width: 768px) {
+}
+@media (min-width: 1200px) {
+    #mapa {
+        padding: 15rem 0 4rem 0;
+        h2 {
+            text-align: start;
+            color: transparent;
+            padding: 0 0 2rem 1rem;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: $celeste;
+            font-size: 4.5rem;
+        }
+        iframe {
+            height: 400px;
+        }
+    }
+}
+@media (min-width: 1400px) {
+} ;

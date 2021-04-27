@@ -8,6 +8,10 @@
   font-family: "Nunito", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-weight: 400;
 }
@@ -37,6 +41,10 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .w-25 {
@@ -1357,8 +1365,8 @@ iframe {
 .hvr-bob:active {
   -webkit-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: 0.3s, 1.5s;
-  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-duration: 0.1s, 1.5s;
+  animation-duration: 0.1s, 1.5s;
   -webkit-animation-delay: 0s, 0.3s;
   animation-delay: 0s, 0.3s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
@@ -1477,7 +1485,7 @@ iframe {
 }
 
 .icon-scroll:before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   background: #fff;
@@ -1516,8 +1524,8 @@ iframe {
 
 .masonry {
   /* Masonry container */
-  -webkit-column-count: 3;
-          column-count: 3;
+  -webkit-column-count: 2;
+          column-count: 2;
   -webkit-column-gap: 0.1em;
           column-gap: 0.1em;
 }
@@ -1538,6 +1546,8 @@ iframe {
   .masonry {
     -webkit-column-count: 4;
             column-count: 4;
+    -webkit-column-gap: 0.3em;
+            column-gap: 0.3em;
   }
 }
 
@@ -1565,7 +1575,7 @@ iframe {
 }
 
 .navbar .navbar-background {
-  width: 100%;
+  width: 100vw;
   height: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1604,6 +1614,10 @@ iframe {
   text-decoration: none;
   -webkit-transition: all 300ms;
   transition: all 300ms;
+}
+
+.navbar li a img {
+  width: 40px;
 }
 
 /* menu */
@@ -1671,11 +1685,13 @@ iframe {
           box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.22);
   font-size: 1.6rem;
   padding: 2rem;
-  background-color: #61b1e5;
+  background-color: #fff;
 }
 
 .navbar .menu-btn:checked ~ .menu a {
+  font-weight: 800;
   border: 0;
+  color: #192549;
 }
 
 .navbar .menu-btn:checked ~ .menu-icon .navicon {
@@ -1697,6 +1713,12 @@ iframe {
   top: 0;
 }
 
+@media (min-width: 768px) {
+  .navbar .logo-menu {
+    width: 20%;
+  }
+}
+
 @media (min-width: 998px) {
   .navbar ul {
     background-color: transparent;
@@ -1715,11 +1737,18 @@ iframe {
     border: 0;
     font-weight: bold;
     padding: 20px 20px;
+    color: #fff;
   }
   .navbar .menu {
     clear: none;
     float: right;
     max-height: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .navbar .menu-icon {
     display: none;
@@ -1752,6 +1781,24 @@ iframe {
         align-self: center;
     padding: 1rem;
   }
+  .navbar .logo-menu {
+    width: 13%;
+    margin-left: 20px;
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+    -webkit-filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.22));
+            filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.22));
+  }
+  .navbar .logo-menu:hover {
+    cursor: pointer;
+  }
+  .navbar .navbar-background {
+    height: 90px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   @-webkit-keyframes fadein {
     from {
       opacity: 0;
@@ -1771,7 +1818,6 @@ iframe {
 }
 
 header {
-  padding-top: 5%;
   height: 50vh;
   background-image: url("../img/background-header.png");
   background-position: center;
@@ -1814,13 +1860,56 @@ header .header-texto small {
 header .header-texto button {
   width: 130px;
   background-color: #61b1e5;
-  color: #000;
+  color: #192549;
   font-weight: 800;
   border: 0;
   padding: 5px 10px;
   border-radius: 15px;
   -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
           box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+}
+
+@media (min-width: 768px) {
+  header .header-texto {
+    padding: 1rem 4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 100vh;
+  }
+  header .header-gradiente {
+    height: 100vh;
+  }
+  header .header-texto {
+    padding: 1rem 5rem;
+    top: 0;
+    margin-top: 300px;
+  }
+  header .header-texto h1 {
+    font-size: 4rem;
+  }
+  header .header-texto small {
+    letter-spacing: 14px;
+    font-size: 18px;
+    padding: 15px 6px;
+    font-weight: bold;
+  }
+  header .header-texto button {
+    width: 150px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 15px;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+  }
+  header .header-texto button:hover {
+    background-color: #192549;
+  }
+  header .header-texto button:hover a {
+    color: #fff;
+  }
 }
 
 #futbol {
@@ -1878,6 +1967,35 @@ header .header-texto button {
   bottom: -5px;
 }
 
+@media (min-width: 768px) {
+  #futbol {
+    padding: 5rem 2rem 12rem 2rem;
+  }
+  #futbol .card {
+    width: 48%;
+  }
+  #futbol .card .card-footer {
+    padding: 10px 15px;
+    width: 95%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #futbol {
+    padding: 7rem 2rem 22rem 2rem;
+  }
+  #futbol .card {
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    width: 24%;
+  }
+  #futbol .card:hover {
+    cursor: pointer;
+    -webkit-filter: brightness(1.1);
+            filter: brightness(1.1);
+  }
+}
+
 #nosotros {
   background-color: #61b1e5;
   padding: 4rem 1rem;
@@ -1885,6 +2003,26 @@ header .header-texto button {
 
 #nosotros .nosotros-texto {
   padding: 2rem 0;
+}
+
+@media (min-width: 1200px) {
+  #nosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 4rem 1rem;
+  }
+  #nosotros img {
+    padding: 4rem;
+    width: 45% !important;
+  }
+  #nosotros .nosotros-texto {
+    width: 50%;
+    padding: 2rem;
+  }
 }
 
 #recuerdos {
@@ -1900,7 +2038,13 @@ header .header-texto button {
 }
 
 #mapa {
-  padding: 4rem 0 1rem 0;
+  padding: 6rem 0 1rem 0;
+  position: relative;
+}
+
+#mapa svg {
+  position: absolute;
+  top: 0;
 }
 
 #mapa h2 {
@@ -1908,6 +2052,23 @@ header .header-texto button {
   color: #192549;
   font-size: 2rem;
   padding-bottom: 3rem;
+}
+
+@media (min-width: 1200px) {
+  #mapa {
+    padding: 15rem 0 4rem 0;
+  }
+  #mapa h2 {
+    text-align: start;
+    color: transparent;
+    padding: 0 0 2rem 1rem;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #61b1e5;
+    font-size: 4.5rem;
+  }
+  #mapa iframe {
+    height: 400px;
+  }
 }
 
 footer {
@@ -1919,8 +2080,9 @@ footer {
           box-shadow: -5px 0 10px rgba(0, 0, 0, 0.42);
 }
 
-footer h3 {
+footer h2 {
   color: #fff;
+  padding: 0 0 2rem 0;
 }
 
 footer div:nth-child(2) {
@@ -1960,6 +2122,7 @@ footer form textarea {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #61b1e5;
+  color: #fff;
 }
 
 footer form button {
@@ -1977,6 +2140,7 @@ footer form button {
 footer form button:hover {
   background-color: #fff;
   color: #192549;
+  font-weight: bold;
 }
 
 footer .copy {
@@ -1988,5 +2152,39 @@ footer .copy {
   bottom: 0;
   left: 0;
   font-size: 12px;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer div {
+    width: 33%;
+    padding: 4rem;
+  }
+  footer div:nth-child(2) img {
+    width: 120px;
+  }
+  footer div:nth-child(2) #arf {
+    width: 80px;
+  }
+  footer div form div {
+    width: 100%;
+  }
+  footer .copy {
+    padding: 0.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

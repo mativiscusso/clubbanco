@@ -38,3 +38,30 @@
         bottom: -5px;
     }
 }
+@media (min-width: 768px) {
+    #futbol {
+        padding: 5rem 2rem 12rem 2rem;
+        .card {
+            width: 48%;
+            .card-footer {
+                padding: 10px 15px;
+                width: 95%;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    #futbol {
+        padding: 7rem 2rem 22rem 2rem;
+        .card {
+            transition: all 0.3s ease-in;
+            width: 24%;
+            &:hover {
+                cursor: pointer;
+                filter: brightness(1.1);
+            }
+        }
+    }
+}
+@media (min-width: 1400px) {
+} ;

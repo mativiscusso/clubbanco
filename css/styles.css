@@ -2083,6 +2083,7 @@ footer {
 footer h2 {
   color: #fff;
   padding: 0 0 2rem 0;
+  text-align: end;
 }
 
 footer div:nth-child(2) {

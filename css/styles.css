@@ -2044,7 +2044,7 @@ header .header-texto button {
 
 #mapa svg {
   position: absolute;
-  top: 0;
+  top: -5px;
 }
 
 #mapa h2 {

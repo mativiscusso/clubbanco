@@ -2,7 +2,7 @@ const masonry = document.querySelector(".masonry");
 function random(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
-const randomNumber = random(1, 221);
+const randomNumber = random(1, 210);
 
 for (let i = randomNumber; i < randomNumber + 11; i++) {
     console.log(i);

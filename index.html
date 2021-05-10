@@ -41,12 +41,15 @@
             <h1>CLUB BANCO</h1>
             <small>JUNTOS DESDE 1949</small>
             <button>
-                <a href='#contacto'>
-                    HACETE SOCIO
+                <a mp-mode="dftl"
+                    href="https://www.mercadopago.com/mla/debits/new?preapproval_plan_id=2c93808478f916c701795732fd0e3f29"
+                    name="MP-payButton">
+                    ABONAR CUOTA
                 </a>
             </button>
         </div>
     </header>
+
     <section id="futbol">
         <h2 data-aos="zoom-out-up">FÚTBOL</h2>
         <div class="d-flex">
@@ -109,40 +112,6 @@
     <section id="recuerdos">
         <h2 data-aos="zoom-out-up">EL BAÚL DE LOS RECUERDOS</h2>
         <div class="masonry" data-aos="fade-in">
-            <!-- <div class="item"><img src="./img/recuerdos/big-recuerdo-22_100.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_101.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_102.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_103.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_104.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_105.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_106.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_107.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_108.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_109.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_110.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_111.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_112.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_113.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_114.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_115.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div>
-            <div class="item"><img src="./img/recuerdos/big-recuerdo-22_116.jpg" alt="Galeria de recuerdos"
-                    class="w-100"></div> -->
         </div>
     </section>
     <section id="mapa">
@@ -197,6 +166,22 @@
         </div>
         <div class="copy">Copyright by Club BANCO 2021</div>
     </footer>
+    <script type="text/javascript">
+        (function () {
+            function $MPC_load() {
+                window.$MPC_loaded !== true && (function () {
+                    var s = document.createElement("script");
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src = document.location.protocol + "//secure.mlstatic.com/mptools/render.js";
+                    var x = document.getElementsByTagName('script')[0];
+                    x.parentNode.insertBefore(s, x);
+                    window.$MPC_loaded = true;
+                })();
+            }
+            window.$MPC_loaded !== true ? (window.attachEvent ? window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;
+        })();
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/main.js"></script>
     <script>

@@ -10,6 +10,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -1817,6 +1819,83 @@ iframe {
   }
 }
 
+#tienda {
+  background-image: radial-gradient(#192549 1px, #fafafa 1px), radial-gradient(#192549 1px, #fafafa 1px);
+  background-position: 0 0, 20px 20px;
+  background-size: 40px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6rem 1rem 4rem 1rem;
+}
+
+#tienda p {
+  text-align: center;
+  color: #192549;
+  font-size: 14px;
+  padding: 1.5rem 2rem 0 2rem;
+}
+
+#tienda img {
+  width: 80%;
+}
+
+#tienda button {
+  width: 160px;
+  background-color: #192549;
+  font-weight: 800;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 15px;
+  -webkit-box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+          box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+  margin: 1rem 0 6rem 0;
+  font-size: 14px;
+}
+
+#tienda button a {
+  color: #fff;
+}
+
+#tienda button:hover {
+  background-color: #61b1e5;
+}
+
+#tienda button:hover a {
+  color: #192549;
+}
+
+@media (min-width: 1200px) {
+  #tienda {
+    padding: 10rem 2rem 6rem 2rem;
+  }
+  #tienda img {
+    width: 30%;
+  }
+  #tienda p {
+    font-size: 22px;
+    font-weight: 800;
+    padding: 2rem;
+    background-color: #ffffffb4;
+  }
+  #tienda button {
+    width: 180px;
+    padding: 12px 18px;
+    font-size: 18px;
+    margin: 0.5rem 0 8rem 0;
+  }
+}
+
 header {
   height: 50vh;
   background-image: url("../img/background-header.png");
@@ -1897,10 +1976,41 @@ header .header-texto button {
     font-weight: bold;
   }
   header .header-texto button {
-    width: 150px;
+    width: 160px;
     padding: 8px 15px;
     border-radius: 15px;
     font-size: 15px;
+    -webkit-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+  }
+  header .header-texto button:hover {
+    background-color: #192549;
+  }
+  header .header-texto button:hover a {
+    color: #fff;
+  }
+}
+
+@media (min-width: 1400px) {
+  header .header-texto {
+    padding: 1rem 5rem;
+    top: 0;
+    margin-top: 400px;
+  }
+  header .header-texto h1 {
+    font-size: 5rem;
+  }
+  header .header-texto small {
+    letter-spacing: 18px;
+    font-size: 22px;
+    padding: 18px 6px;
+    font-weight: bold;
+  }
+  header .header-texto button {
+    width: 190px;
+    padding: 12px 18px;
+    border-radius: 15px;
+    font-size: 18px;
     -webkit-transition: all 0.15s ease;
     transition: all 0.15s ease;
   }

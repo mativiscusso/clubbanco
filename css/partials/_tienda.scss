@@ -1,0 +1,61 @@
+#tienda {
+    background-image: radial-gradient($azul 1px, #fafafa 1px), radial-gradient($azul 1px, #fafafa 1px);
+    background-position: 0 0, 20px 20px;
+    background-size: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6rem 1rem 4rem 1rem;
+    p {
+        text-align: center;
+        color: $azul;
+        font-size: 14px;
+        padding: 1.5rem 2rem 0 2rem;
+    }
+    img {
+        width: 80%;
+    }
+    button {
+        width: 160px;
+        background-color: $azul;
+        a {
+            color: #fff;
+        }
+        font-weight: 800;
+        border: 0;
+        padding: 8px 12px;
+        border-radius: 15px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.22);
+        &:hover {
+            background-color: $celeste;
+            a {
+                color: $azul;
+            }
+        }
+        margin: 1rem 0 6rem 0;
+        font-size: 14px;
+    }
+}
+@media (min-width: 1200px) {
+    #tienda {
+        padding: 10rem 2rem 6rem 2rem;
+
+        img {
+            width: 30%;
+        }
+        p {
+            font-size: 22px;
+            font-weight: 800;
+            padding: 2rem;
+            background-color: #ffffffb4;
+        }
+        button {
+            width: 180px;
+            padding: 12px 18px;
+
+            font-size: 18px;
+            margin: 0.5rem 0 8rem 0;
+        }
+    }
+}

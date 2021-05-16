@@ -64,7 +64,7 @@ header {
                 font-weight: bold;
             }
             button {
-                width: 150px;
+                width: 160px;
                 padding: 8px 15px;
                 border-radius: 15px;
                 font-size: 15px;
@@ -80,4 +80,33 @@ header {
     }
 }
 @media (min-width: 1400px) {
+    header {
+        .header-texto {
+            padding: 1rem 5rem;
+            top: 0;
+            margin-top: 400px;
+            h1 {
+                font-size: 5rem;
+            }
+            small {
+                letter-spacing: 18px;
+                font-size: 22px;
+                padding: 18px 6px;
+                font-weight: bold;
+            }
+            button {
+                width: 190px;
+                padding: 12px 18px;
+                border-radius: 15px;
+                font-size: 18px;
+                transition: all 0.15s ease;
+                &:hover {
+                    background-color: $azul;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
 } ;

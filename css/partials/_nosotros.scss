@@ -23,4 +23,17 @@
     }
 }
 @media (min-width: 1400px) {
+    #nosotros {
+        img {
+            padding: 4rem;
+            width: 30% !important;
+        }
+        .nosotros-texto {
+            width: 50%;
+            padding: 3rem;
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
 } ;

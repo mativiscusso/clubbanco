@@ -1785,10 +1785,11 @@ iframe {
   }
   .navbar .logo-menu {
     width: 13%;
-    margin-left: 20px;
+    margin-left: 50px;
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+    margin-bottom: -130px;
     -webkit-filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.22));
             filter: drop-shadow(3px 6px 5px rgba(0, 0, 0, 0.22));
   }
@@ -1816,6 +1817,12 @@ iframe {
     to {
       opacity: 1;
     }
+  }
+}
+
+@media (min-width: 1600px) {
+  .navbar .logo-menu {
+    width: 10%;
   }
 }
 
